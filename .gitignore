@@ -1,0 +1,15 @@
+# Secret files
+.env
+
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Output files
+*.mp3
+
+# IDE settings
+.vscode/
