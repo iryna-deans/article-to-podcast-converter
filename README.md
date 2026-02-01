@@ -2,13 +2,6 @@
 
 A simple Python tool that converts text articles into natural-sounding audio podcasts using the ElevenLabs API.
 
-## Features
-
-- Convert any text to natural-sounding speech
-- Multiple voice options (Rachel, Adam, Bella, Antoni)
-- High-quality audio output using ElevenLabs' multilingual v2 model
-- Simple, clean Python code with type hints
-
 ## Tech Stack
 
 - Python 3.11+
@@ -20,34 +13,46 @@ A simple Python tool that converts text articles into natural-sounding audio pod
 ### Prerequisites
 
 - Python 3.11 or higher
-- An ElevenLabs account (free tier works)
+- An ElevenLabs account 
 
 ### Installation
 
 1. Clone this repository:
-```bash
-   git clone https://github.com/YOUR_USERNAME/elevenlabs-article-to-podcast.git
-   cd elevenlabs-article-to-podcast
-```
 
 2. Create and activate a virtual environment:
 ```bash
-   python -m venv venv
-   source venv/bin/activate 
+python -m venv venv
+source venv/bin/activate
 ```
 
 3. Install dependencies:
 ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
-4. Create a `.env` file with your ElevenLabs API key:
+4. Create a `.env` file with your ElevenLabs API key (use .env.example)
 ```
-   ELEVENLABS_API_KEY=your_api_key_here
+ELEVENLABS_API_KEY=your_api_key_here
 ```
 
 5. Run the converter:
 ```bash
-   python main.py
+python main.py
 ```
 
+## Voice Comparison Tool
+
+Not sure which voice to use? Generate samples with multiple voices:
+```bash
+python compare_voices.py
+```
+
+This creates MP3 files in `/comparisons` so you can listen and compare.
+
+### Available Voices
+
+| Voice | Style | Best For |
+|-------|-------|----------|
+| Rachel | Calm, clear | Narration, explainers |
+| Adam | Deep, authoritative | News, documentaries |
+| Bella | Soft, warm | Storytelling, gentle content |
